@@ -39,12 +39,13 @@ minikube start
 ```bash
 kubectl apply -f deployment.yaml
 ```
-![Pods Screenshot](screenshots/pods.png)
+
 
 ### 3. Expose Deployment via Service
 ```bash
 kubectl apply -f service.yaml
 ```
+
 
 ### 4. Verify Resources
 ```bash
@@ -52,17 +53,24 @@ kubectl get deployments
 kubectl get pods
 kubectl get services
 ```
+![Pods Screenshot](screenshots/applying-deployment.png)
+![Pods Screenshot](screenshots/pod-logs.png)
+![Pods Screenshot](screenshots/applying-services.png)
 
 ### 5. Scale Deployment
 ```bash
 kubectl scale deployment my-app --replicas=3
 ```
+![Pods Screenshot](screenshots/scaling-deployment.png)
 ### 6. Access the App
 ```bash
 minikube service my-service
 ```
+![Pods Screenshot](screenshots/testing-ngnix.png)
+![Pods Screenshot](screenshots/working-ngnix.png)
 ### 7. delete the minikube profile
 
 ```bash
 minikube delete
 ```
+![Pods Screenshot](screenshots/k8-delete.png)
