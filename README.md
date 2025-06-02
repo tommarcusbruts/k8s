@@ -53,24 +53,24 @@ kubectl get deployments
 kubectl get pods
 kubectl get services
 ```
-![Pods Screenshot](screenshots/applying-deployment.png)
-![Pods Screenshot](screenshots/pod-logs.png)
-![Pods Screenshot](screenshots/applying-services.png)
+![screenshot](screenshots/applying-deployment.png)
+![screenshot](screenshots/pod-logs.png)
+![screenshot](screenshots/applying-services.png)
 
 ### 5. Scale Deployment
 ```bash
 kubectl scale deployment my-app --replicas=3
 ```
-![Pods Screenshot](screenshots/scaling-deployment.png)
+![screenshot](screenshots/scaling-deployment.png)
 ### 6. Access the App
 ```bash
 minikube service my-service
 ```
-![Pods Screenshot](screenshots/testing-ngnix.png)
-![Pods Screenshot](screenshots/working-ngnix.png)
+![screenshot](screenshots/testing-ngnix.png)
+![screenshot](screenshots/working-ngnix.png)
 ### 7. delete the minikube profile
 
 ```bash
 minikube delete
 ```
-![Pods Screenshot](screenshots/k8-delete.png)
+![screenshot](screenshots/k8-delete.png)
